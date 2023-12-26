@@ -24,6 +24,7 @@ img {
   top: 30%;
   transform: translate(-50%, -30%);
   font-size: 150px;
+  text-shadow: 2px 2px 2px black;
 }
 #login-form,
 #greeting {
@@ -32,6 +33,7 @@ img {
   top: 55%;
   transform: translate(-50%, -55%);
   font-size: 50px;
+  text-shadow: 2px 2px 2px black;
 }
 
 #quote {

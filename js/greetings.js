@@ -13,8 +13,28 @@ function onLoginSubmit(event) {
   paintGreetings(username);
 }
 
+const textHello1 = textHello();
+
+function textHello() {
+  const date = new Date();
+  const hours = date.getHours();
+  if (hours < 6) {
+    return "GoodNight";
+  } else if (hours < 12) {
+    return "GoodMoring";
+  } else if (hours === 12) {
+    return "GoodNoon";
+  } else if (hours < 18) {
+    return "GoodAfternoon";
+  } else if (hours < 22) {
+    return "GoodEvening";
+  } else if (hours < 25) {
+    return "GoodNight.";
+  }
+}
+
 function paintGreetings(username) {
-  greeting.innerText = `Hello, ${username}`;
+  greeting.innerText = `${textHello1}, ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
