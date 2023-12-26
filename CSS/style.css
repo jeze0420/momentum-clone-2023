@@ -1,7 +1,47 @@
 body {
-  background-color: beige;
+  color: white;
 }
 
 .hidden {
   display: none;
+}
+
+img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 80px;
+}
+
+#clock {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  font-size: 150px;
+}
+#login-form,
+#greeting {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -55%);
+  font-size: 50px;
+}
+
+#quote {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  text-shadow: 2px 2px 2px black;
+  z-index: 2;
 }
