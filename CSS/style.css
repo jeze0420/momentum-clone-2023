@@ -1,5 +1,6 @@
 body {
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 .hidden {
@@ -21,10 +22,9 @@ img {
 #clock {
   position: absolute;
   left: 50%;
-  top: 30%;
-  transform: translate(-50%, -30%);
+  top: 22%;
+  transform: translate(-50%, -22%);
   font-size: 150px;
-  text-shadow: 2px 2px 2px black;
 }
 #login-form,
 #greeting {
@@ -33,7 +33,54 @@ img {
   top: 55%;
   transform: translate(-50%, -55%);
   font-size: 50px;
-  text-shadow: 2px 2px 2px black;
+}
+
+input[type="submit"] {
+  display: none;
+}
+
+#greeting {
+  text-align: center;
+}
+
+#todo-form {
+  position: absolute;
+  left: 50%;
+  bottom: 17%;
+  transform: translate(-50%, -17%);
+  display: grid;
+  font-size: 30px;
+  white-space: nowrap; /* 텍스트가 한 줄로 나오도록 설정 */
+}
+
+input {
+  font-size: 30px;
+  color: white;
+  border: none; /* 기본 테두리 제거 */
+  border-bottom: 2px solid white; /* 밑줄 추가 및 색상 설정 */
+  outline: none; /* 포커스 효과 제거 */
+  padding: 5px 0; /* 선택적으로 내부 여백 추가 */
+  background-color: transparent; /* 배경색을 투명으로 설정 */
+}
+
+#todo-list {
+  position: relative;
+  left: 70%;
+  top: 43rem;
+  font-size: 25px;
+  display: block;
+  width: 400px;
+  list-style: none;
+}
+
+#todo-list > li > button {
+  background-color: #ff5252; /* 삭제 버튼 색상 */
+  color: white; /* 텍스트 색상 */
+  border: none;
+  padding: 0.5px 4px; /* 내부 여백 조절 */
+  cursor: pointer;
+  border-radius: 5px; /* 둥근 테두리 설정 */
+  font-size: 12px;
 }
 
 #quote {
@@ -41,9 +88,9 @@ img {
   left: 50%;
   bottom: 20px;
   transform: translate(-50%, 0);
-  font-size: 20px;
+  font-size: 15px;
   display: grid;
+  white-space: nowrap; /* 텍스트가 한 줄로 나오도록 설정 */
   place-items: center;
-  text-shadow: 2px 2px 2px black;
   z-index: 2;
 }

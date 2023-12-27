@@ -28,8 +28,8 @@ function textHello() {
     return "GoodAfternoon";
   } else if (hours < 22) {
     return "GoodEvening";
-  } else if (hours < 25) {
-    return "GoodNight.";
+  } else if (hours < 24) {
+    return "GoodNight";
   }
 }
 
