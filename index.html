@@ -7,26 +7,41 @@
     <title>Momentum</title>
   </head>
   <body>
+    <aside id="reset">
+      <i class="fas fa-sign-out-alt fa-lg"></i>
+    </aside>
+
     <h2 id="clock">00:00</h2>
+
     <form id="login-form" class="hidden">
       What's your name?
-      <input required maxlength="15" type="text" />
+      <input required maxlength="15" type="text" autofocus />
       <input type="submit" value="" />
     </form>
+
     <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
+
+    <form id="todo-form" class="hidden">
       What is your main focus for today?
-      <input type="text" required />
+      <input type="text" required autofocus />
     </form>
-    <ul id="todo-list"></ul>
+
+    <ul id="todo-list" class="hidden"></ul>
+
     <div id="quote">
       <span></span>
       <span></span>
     </div>
+
     <div id="weather">
       <span></span>
       <span></span>
     </div>
+
+    <script
+      src="https://kit.fontawesome.com/6247a991a3.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
@@ -34,5 +49,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/api_key.js"></script>
+    <script src="js/reset.js"></script>
   </body>
 </html>

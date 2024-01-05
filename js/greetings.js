@@ -38,10 +38,6 @@ function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-// function removeUsername() {
-//   localStorage.removeItem(USERNAME_KEY);
-// }
-
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {

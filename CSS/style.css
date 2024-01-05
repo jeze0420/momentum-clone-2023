@@ -19,6 +19,13 @@ img {
   opacity: 80px;
 }
 
+#reset {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
 #clock {
   position: absolute;
   left: 50%;
@@ -54,7 +61,8 @@ input[type="submit"] {
 }
 
 input {
-  font-size: 30px;
+  font-size: min(30px, 5vw);
+  text-align: center;
   color: white;
   border: none; /* 기본 테두리 제거 */
   border-bottom: 2px solid white; /* 밑줄 추가 및 색상 설정 */
@@ -69,8 +77,10 @@ input {
   top: 43rem;
   font-size: 25px;
   display: block;
-  width: 400px;
+  width: 100px;
   list-style: none;
+  max-width: min(525px, 50vw);
+  overflow-y: hidden;
 }
 
 #todo-list > li > button {
