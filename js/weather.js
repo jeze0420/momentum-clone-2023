@@ -1,3 +1,5 @@
+const API_Key = "0e141239c06b66f7f0b89c873108c6b2";
+
 function onGeoSucess(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude; // api_key 파일을 깃에 올리지않기 위해 따로 파일을 만들어주고 gitignore에 추가해줌
